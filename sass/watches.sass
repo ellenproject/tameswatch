@@ -1,0 +1,777 @@
+*
+    margin: 0
+    padding: 0
+
+main
+    width: 100%
+    max-width: 1920px
+    margin: 0 auto
+    overflow: hidden
+body
+    position: relative
+    line-height: 1.7
+    font-family: Exo, "Microsoft JhengHei", 微軟正黑體, sans-serif, serif
+    font-size: 16px
+    @media screen and ( max-width: 768px )
+        padding-bottom: 0
+        padding-top: 140px
+
+    header
+        width: 100%
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1030
+        .search
+            background: #f2f2f2
+            &__item
+                height: 44px
+                position: relative
+                padding: 0 35px
+                margin: 0 auto
+                justify-content: space-between
+                display: flex
+                align-items: center
+                @media screen and ( max-width: 768px )
+                    display: none
+                &--left
+                    top: 50%
+                    .fas
+                        margin-right: 10px
+                &--right
+                    top: 50%
+                    &--account
+                        display: flex
+                        &--a
+                            list-style: none
+                            display: inline-block
+                            vertical-align: middle
+                            text-decoration: none
+                            color: #252525
+                            font-size: 14px
+                            padding: 10px 0px
+                            margin-right: 10px
+                            transition: all 0.3s ease-in-out
+                            // .dropdownButton
+                            //     display: none
+                            // &:hover
+                            //     background: #8b8b8b
+                            //     color: #fff
+                            // &:active
+                            //     .dropdownButton
+                            //         display: block
+                            .fas
+                                margin-right: 10px
+                            .fa-caret-down
+                                margin-left: 10px
+                        &--button
+                            position: relative
+                        &--dropdown
+                            max-height: 0px
+                            overflow: hidden
+                            background: #d8d8d8
+                            display: block
+                            border-bottom-left-radius: 6px
+                            border-bottom-right-radius: 6px
+                            position: absolute
+                            top: 100%
+                            right: 0
+                            z-index: 600
+                            margin-top: -1px
+                            min-width: 220px
+                            border: 1px solid #969696
+                            background: #fff
+                            text-align: left
+                            // display: none
+                            &--order
+                                padding-top: 2px
+                                list-style: none
+                                padding-left: 0
+                                &--item
+                                    display: block
+                                    padding: 7px 14px
+                                    &:hover
+                                        background: #84754d
+                                        a
+                                            color: #fff
+                                    a
+                                        font-size: 14px
+                                        text-decoration: none
+                                        color: #333
+                                        cursor: pointer
+                                        border-bottom: 0
+                                        display: block
+                            &--track
+                                padding: 14px 14px 7px 14px
+                                margin-top: 20px
+                                background: #fff
+                                &--text
+                                    color: #6c6c6c
+                                &--input
+                                    margin: 5px 0 0
+                                    display: flex
+                                    position: relative
+                                    &--email
+                                        width: 100%
+                                        padding-right: 35px
+                                        height: 32px
+                                        border-radius: 4px
+                                        padding: 4px 8px
+                                        border: 1px solid #c7c7c7
+                                        background: #fff
+                                        color: #c7c7c7
+                                        font-size: 12px
+                                        box-sizing: border-box
+                                    &--btn
+                                        position: absolute
+                                        top: 0px
+                                        right: 0px
+                                        padding: 0 10px
+                                        min-width: 32px
+                                        height: 32px
+                                        border: 0px
+                                        border-left: 1px solid #cdcdcd
+                                        background: #9e9067
+                                        color: #fff
+                                        cursor: pointer
+                                        box-sizing: border-box
+                                        border-radius: 0px 4px 4px 0px
+                            &--btn
+                                padding: 15px
+                                margin-top: -6px
+                                background: #FFF
+                                &--go
+                                    display: block
+                                    width: 100%
+                                    box-sizing: border-box
+                                    color: #fff
+                                    margin-bottom: 10px
+                                    padding: 6px 14px
+                                    text-align: center
+                                    cursor: pointer
+                                    text-decoration: none
+                                    transition: background 200ms
+                                &--login
+                                    background: #7e765d
+                                &--register
+                                    background: #9e9067
+                        .menu-show
+                            max-height: 500px
+        .nav
+            &__inner
+                width: 100%
+                display: flex
+                height: 76px
+                justify-content: space-between
+                padding: 10px 20px
+                align-items: center
+                background: #fff
+                box-shadow: 0px 1px 1px #dedede
+                position: relative
+                @media screen and ( max-width: 768px )
+                    display: block
+                &__left--logo
+                    &--a
+                        padding: 28px 0
+                        img
+                            width: 216px
+                &__center
+                    overflow: auto
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 60%
+                    @media screen and ( max-width: 768px )
+                        top: 50%
+                        left: 50%
+                        width: 99%
+                    &--menu
+                        list-style: none
+                        margin: 0
+                        padding: 0
+                        display: flex
+                        align-items: center
+                        @media screen and ( min-width: 768px )
+                            display: block
+                        @media screen and ( max-width: 768px )
+                            display: none
+                        &--item
+                            list-style: none
+                            margin: 0
+                            padding: 0
+                            padding-left: 15px
+                            line-height: 3.3em
+                            border-bottom: solid 1px #333
+                            background-color: #fff
+                            // margin-right: 2px
+                            // position: relative
+                            @media screen and ( min-width: 768px )
+                                float: left
+                                margin-left: 15px
+                                padding-left: 15px
+                                line-height: 3.3em
+                                border-bottom: solid 1px #333
+                            a
+                                text-decoration: none
+                                line-height: 2em
+                                font-size: 1.2em
+                                color: #333
+                                background-color: #fff
+                                color: #212529
+                                // display: block
+                                padding: 12px 30px
+                                // text-decoration: none
+                                // line-height: 40px
+                                // margin-right: -2px
+                                &:hover
+                                    background: #f2f2f2
+                                    color: #84754d
+                                    transition: all 0.3s ease-in-out
+                            &--second
+                                // border: #dedede 1px solid
+                                // position: absolute
+                                // z-index: 99
+                                // left: -1px
+                                // top: 100%
+                                // width: 100%
+                                // padding-left: 0
+                                // list-style: none
+                                display: none
+                                margin: 0
+                                padding: 0
+                                @media screen and ( max-width: 768px )
+                                    // position: relative
+                                    display: none
+                                @media screen and ( max-width: 768px )
+                                    display: none
+                                &--list
+                                    padding-left: 15px
+                                    border-bottom: 1px solid #333
+                                    list-style: none
+                                    &:first-child
+                                        border-top: solid 1px #333
+                                    &:last-child
+                                        border: 0
+                                    a
+                                        padding: 10px 20px
+                            .disabled
+                                pointer-events: none
+                                opacity: 0.6
+                &__right
+                    margin-right: 5px
+                    color: #212529
+                    @media screen and ( max-width: 768px )
+                        display: none
+                    &--cart
+                        padding: 28px 10px
+                        img
+                            height: 25px
+                #nav-btn
+                    display: block
+                    text-decoration: none
+                    color: #333
+                    @media screen and ( min-width: 768px )
+                        display: none
+                .menu-plus
+                    display: block
+                    background: #333
+                    color: #fff !important
+                    padding: 2px 15px
+                    margin-top: 5px
+                    border-radius: 30px
+                    float: right
+    main
+        margin-top: 10%
+        width: 100%
+        position: relative
+        .container
+            width: 100%
+            max-width: none
+            box-sizing: border-box
+            margin: 0 auto
+            .titleWrapper
+                text-align: center
+                width: 100%
+                display: block
+                .subtitle
+                    line-height: 1.8em
+                    margin-bottom: 20px
+                    h1
+                        font-size: 30px
+                        font-weight: 300
+            .watches
+                margin: 0 auto
+                .filterWrapper
+                    .sidebox
+                        padding: 16px
+                        background: #f7f7f7
+                        .sidebox-title
+                            width: 100%
+                            margin: 0 0 15px 0
+                            color: #444
+                            font-size: 22px
+                        .filtersbox
+                            .pricebox
+                                .priceTitle
+                                    display: flex
+                                    padding: 6px 0
+                                    cursor: pointer
+                                    justify-content: space-between
+                                    .title
+                                        font-size: 16px
+                                        font-weight: normal
+                                .priceContent
+                                    display: block
+                                    font-size: 14px
+                                    padding: 10px 0
+                                    margin-bottom: 20px
+                                    color: #909598
+                                    .priceRange
+                                        position: relative
+                                        display: table
+                                        border-collapse: separate
+                                        display: flex
+                                        .inputGroupStart, .inputGroupEnd
+                                            display: table
+                                            border-collapse: separate
+                                            span
+                                                padding: 0 2px
+                                                width: 1%
+                                                white-space: nowrap
+                                                vertical-align: middle
+                                                display: table-cell
+                                                position: relative
+                                            .inputPrice
+                                                width: 100%
+                                                margin: 0
+                                                padding: 2px 2px
+                                                height: auto
+                                                font-size: 14px
+                                                border-radius: 4px
+                                                border: 1px solid #909598
+                                                color: #a4958a
+                                                display: table-cell
+                                                min-width: 0
+                                        .horizonLine
+                                            padding: 0 15px
+                                            width: 1%
+                                            white-space: nowrap
+                                            vertical-align: middle
+                                            display: table-cell
+                                    .priceSlider
+                                        position: relative
+                                        margin: 15px 12px
+                                        height: 5px
+                                        border: 1px solid #616161
+                                        background: #616161
+                                        border-right: none
+                                        .sliderWrapper
+                                            margin-left: -1px
+                                            color: #d4d4d4
+                                            padding: 0
+                                            margin: 0
+                                            list-style: none
+                                            .sliderRange
+                                                left: 0%
+                                                width: 100%
+                                                background: #d4d4d4
+                                                border: 0px
+                                                margin-top: -1px
+                                                height: 7px
+                                                top: 0
+                                                position: absolute
+                                                z-index: 1
+                                                font-size: .7em
+                                                display: block
+                                            .sliderBar
+                                                position: absolute
+                                                z-index: 2
+                                                top: -8px
+                                                margin-left: -5px
+                                                width: 11px
+                                                height: 20px
+                                                background: #9e9067
+                                                cursor: col-resize
+                                            .sliderBarMin
+                                                left: 0%
+                                            .sliderBarMax
+                                                left: 100%
+                                            .filterCheckbox
+                                                margin: -4px 6px 0 0
+                                                padding: 0
+                                                vertical-align: middle
+                                                display: none
+                                .menu-show
+                                    display: none
+                            .namebox, .functionbox, .typebox, .purposebox
+                                margin-top: 2px
+                                .nameTitle, .functionTitle, .typeTitle, .purposeTitle
+                                    display: flex
+                                    padding: 6px 0
+                                    cursor: pointer
+                                    justify-content: space-between
+                                    .title
+                                        font-size: 16px
+                                        font-weight: normal
+                                .nameChoosebox, .functionChoosebox, .typeChoosebox, .purposeChoosebox
+                                    display: block
+                                    font-size: 14px
+                                    margin-bottom: 15px
+                                    list-style: none
+                                    .chooseItem
+                                        padding: 2px 0
+                                        margin: 5px 3px
+                                        .itemCheck
+                                            cursor: pointer
+                                            margin: -4px 6px 0 0
+                                            padding: 0
+                                            vertical-align: middle
+                                .menu-show
+                                    display: none
+                            .colorbox
+                                .colorChoosebox
+                                    height: 273px
+                                    opacity: 1
+                                    visibility: visible
+                                    display: flex
+                                    .colortips
+                                        -webkit-box-orient: vertical
+                                        box-decoration-break: normal
+                                        flex-direction: column
+                                        width: 50px
+                                        margin-right: 14px
+                                        margin-bottom: 20px
+                                        .inputColor
+                                            visibility: hidden
+                                            margin: 0
+                                            width: 0
+                                            height: 0
+                                        .colorWrap
+                                            flex-wrap: wrap
+                                            visibility: visible
+                                            width: 50px
+                                            height: 50px
+                                            display: flex
+                                            -webkit-box-pack: center
+                                            justify-content: center
+                                            -webkit-box-align: center
+                                            align-items: center
+                                            border: 1px solid #bebebe
+                                            border-radius: 4px
+                                            .colorFull
+                                                content: ""
+                                                display: block
+                                                width: 24px
+                                                height: 24px
+                                                padding: 10px
+                                                font-size: 0
+                                            .colorblack
+                                                background: #000
+                                            .colorwhite
+                                                background: #FFF
+                                            .colorgray
+                                                background: #858585
+                                .menu-show
+                                    display: none
+                .productsWrapper
+                    .sortWrapper
+                        border-top: 1px solid #e0e0e0
+                        border-bottom: 1px solid #e0e0e0
+                        margin: 0 0px 28px
+                        display: inline-block
+                        box-sizing: border-box
+                        width: 100%
+                        font-size: 15px
+                        .sort-dropdown
+                            display: inline-block
+                            position: relative
+                            .orderItem
+                                text-decoration: none
+                                padding: 5px 7px 9px
+                                display: inline-block
+                                color: #464646
+                                cursor: pointer
+                                border-bottom: 2px #000 solid
+                                margin-bottom: -1px
+                                transition: all 0.3s ease 0.1s
+                                .fa-sort-down
+                                    font-size: 14px
+                                    position: relative
+                                    padding-left: 10px
+                                    top: -3px
+                        .dropdownContent
+                            display: none
+                            position: absolute
+                            z-index: 100
+                            border: 1px solid #97a0a5
+                            background: #fff
+                            min-width: 200px
+                            list-style: none
+                            .dropdowwItem
+                                margin: 0
+                                padding: 2px 0
+                                text-indent: 0
+                                list-style: none
+                                .item-a
+                                    text-decoration: none
+                                    padding: 7px 14px
+                                    color: #333
+                                    display: block
+                                    transition: all 0.3s ease 0.1s
+                    .CardWrapper
+                        padding-top: 48px
+                        margin: -15px -8px 0
+                        .grid-list
+                            flex-wrap: wrap
+                            display: flex
+                            list-style: none
+                            padding-left: 0
+                            .cardBox
+                                min-height: 432px
+                                margin-left: 6px
+                                margin-bottom: 30px
+                                list-style: none
+                                width: 307px
+                                margin-right: 10px
+                                margin-top: 10px
+                                @media screen and ( max-width: 768px )
+                                    width: 200px
+                                .productPanel
+                                    min-height: 395px
+                                    position: relative
+                                    border: 1px solid transparent
+                                    &:hover
+                                        border: 1px solid #bbb
+                                        transition: all 0.5s ease
+                                    .product-a
+                                        display: block
+                                        text-decoration: none
+                                        box-sizing: border-box
+                                        cursor: pointer
+                                        color: #212529
+                                        .product-topbox
+                                            position: relative
+                                            height: 307px
+                                            background: #f7f8fa
+                                            .product-new
+                                                display: inline-block
+                                                padding: 0 7px
+                                                background: #FFF
+                                                font-size: 9px
+                                                position: absolute
+                                                left: 9px
+                                                top: 9px
+                                                max-width: 80%
+                                            .product-img
+                                                display: flex
+                                                align-items: center
+                                                justify-content: center
+                                                height: 100%
+                                                img
+                                                    max-width: 70%
+                                                    max-height: 70%
+                                        .product-infobox
+                                            display: flex
+                                            -webkit-box-pack: justify
+                                            justify-content: space-between
+                                            align-items: flex-end
+                                            padding: 6px 10px 0
+                                            line-height: 2
+                                            background: #fff
+                                            .info-main
+                                                .infoSeries
+                                                    font-size: 16px
+                                                    line-height: 25px
+                                                    font-weight: 400
+                                                .infoName
+                                                    font-size: 18px
+                                                    line-height: 21.6px
+                                                    font-weight: 600
+                                                    margin-top: 4px
+                                                    overflow: hidden
+                                                    display: -webkit-box
+                                                    -webkit-box-orient: vertical
+                                                    height: 44px
+                                                .pricebox
+                                                    visibility: visible
+                                                    line-height: 1.2
+                                                    margin-top: 10px
+                                                    .price-label
+                                                        font-size: 8px
+                                                        font-weight: 200
+                                                        min-height: 10px
+                                                    .price-nt
+                                                        font-size: 14px
+                                    .product-favcart
+                                        .favbox
+                                            position: absolute
+                                            top: 10px
+                                            right: 9px
+                                            cursor: pointer
+                                            .fa-heart
+                                                &:hover
+                                                    color: #891816
+                                        .cartbox
+                                            position: absolute
+                                            bottom: 3px
+                                            right: 9px
+                                            border: 1px solid #bebebe
+                                            box-sizing: border-box
+                                            cursor: pointer
+                                            width: 32px
+                                            height: 32px
+                                            overflow: hidden
+                                            &:hover
+                                                background-color: #9e9067
+                                                transition: all 0.3s ease-in-out
+                                            img
+                                                width: 100%
+footer
+    margin-top: 100px
+    position: relative
+    z-index: 3
+    background: #f2f2f2
+    .footerSection
+        text-align: left
+        line-height: 1.25
+        .footer__main
+            background: #f9f9f9
+            padding: 50px 3%
+            .main-newsletter
+                margin: 0 auto
+                width: 100%
+                .newsletter-title
+                    font-size: 12px
+                    font-weight: 700
+                    margin-bottom: 22px
+                    margin: 0 0 20px
+                    text-align: center
+                .subscribe
+                    max-width: 464px
+                    margin: 0 auto
+                    .newsletter
+                        position: relative
+                        .hidden
+                            border: 0
+                            clip: rect(0,0,0,0)
+                            height: 1px
+                            margin: -1px
+                            overflow: hidden
+                            padding: 0
+                            position: absolute
+                        .control
+                            position: relative
+                            .inputBox
+                                border: 1px solid #e2e2e2
+                                color: #666
+                                font-size: 16px
+                                letter-spacing: .04em
+                                height: 49px
+                                padding: 0 20px
+                                vertical-align: baseline
+                                width: 100%
+                                box-sizing: border-box
+
+                            .placeholder
+                                top: 0
+                                background: 0 0
+                                text-transform: none
+                                font-size: 16px
+                                line-height: 46px
+                                white-space: normal
+                                display: block
+                                position: absolute
+                                left: 19px
+                                padding: 0 2px
+                                transition: all .15s
+                                span
+                                    color: #e7e7e7
+                                    line-height: 1.2
+                                    display: inline-block
+                                    vertical-align: middle
+                                    text-align: left
+                        .subscribe
+                            widows: 138px
+                            padding: 0 10px
+                            position: absolute
+                            right: 0
+                            top: 0
+                            background: #c40d2e
+                            border: 1px solid #c40d2e
+                            color: #fff
+                        .action
+                            margin: 0
+                            text-decoration: none
+                            text-transform: uppercase
+                            min-height: 49px
+                            line-height: 47px
+                            display: inline-block
+                            zoom: 1
+                            box-sizing: border-box
+                            text-align: center
+                            overflow: hidden
+                            transition: background .2s ease, color .2s ease, border .2s ease
+                            span
+                                position: relative
+                                display: inline-block
+                                padding: 1px 0 3px
+                                font-size: 16px
+                                vertical-align: middle
+                                line-height: 112%
+            .main-menu
+                margin-top: 20px
+                font-size: 13px
+                line-height: 1.8
+                padding: 50px 3%
+                border-top: 1px solid #e2e2e2
+                border-bottom: 1px solid #e2e2e2
+                .menu-content
+                    max-width: 1250px
+                    margin: 0 auto
+                    .subtitle
+                        margin-bottom: 15px
+                        .title
+                            font-size: 14px
+                            font-weight: 500
+                    .menu-items
+                        list-style: none
+                        padding-left: 0
+                        .item
+                            display: block
+                            margin: 0 0 3px
+                            .link
+                                text-decoration: none
+                                color: #666
+                                pointer-events: none
+                                opacity: 0.6
+                                &:hover
+                                    color: #7b7b7b
+                    .contactbox
+                        margin-top: 30px
+                        .contact
+                            border: 1px solid #e2e2e2
+                            background: #FFF
+                            padding: 15px 40px
+                            text-align: center
+                            text-decoration: none
+                            transition: all .3s ease-in-out
+                            &:hover
+                                background: #f2f2f2
+                                .contactTitle
+                                    color: #a7a7a7
+                            .contactTitle
+                                font-size: 16px
+                                font-weight: 400
+                                color: #666
+            .main-copyright
+                margin-top: 20px
+                display: flex
+                justify-content: space-between
+                .copyright
+                    font-size: 10px
+                .media
+                    a
+                        color: #212529
+                        &:hover
+                            color: #7b7b7b

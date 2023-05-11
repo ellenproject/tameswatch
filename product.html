@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tames Watch Taiwan 智能手錶品牌，探索TAMES的所有產品。 包括smartwatch，健身腕帶，耳機，睡眠芽，以及更專業的可穿戴設備。">
+    <meta name="keywords" content="智能手錶, 藍芽裝置">
+    <title>TAMES WATCH</title>
+    <link rel="stylesheet" href="./sass/product.css">
+    <link rel="stylesheet" href="./sass/slick.css">
+    <link rel="stylesheet" href="./sass/slick-theme.css">
+    <script src="./js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/66ca577ef5.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="search">
+            <div class="search__item">
+                <div class="search__item--left">
+                    <i class="fas fa-headphones-alt"></i>客服專線 0800-774-488
+                </div>
+                <div class="search__item--right">
+                    <div class="search__item--right--account">
+                        <a href="#" class="search__item--right--account--a search__item--right--account--button">
+                            <i class="fas fa-user"></i>會員專區<i class="fas fa-caret-down"></i>
+                        </a>
+                        <div class="search__item--right--account--dropdown">
+                            <ul class="search__item--right--account--dropdown--order">
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">訂單</a></li>
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">退貨申請</a></li>
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">查看我的最愛</a></li>
+                            </ul>
+                            <div class="search__item--right--account--dropdown--track">
+                                <form action="#">
+                                    <div class="search__item--right--account--dropdown--track--text">追蹤我的訂單</div>
+                                    <div class="search__item--right--account--dropdown--track--input">
+                                        <input type="text" size="20" class="search__item--right--account--dropdown--track--input--email" placeholder="訂單編號/電子郵件">
+                                        <button title="繼續" class="search__item--right--account--dropdown--track--input--btn" type="submit"><i class="fas fa-caret-right"></i></button>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search__item--right--account--dropdown--btn">
+                                <a href="#" class="search__item--right--account--dropdown--btn--go search__item--right--account--dropdown--btn--login">登入</a>
+                                <a href="#" class="search__item--right--account--dropdown--btn--go search__item--right--account--dropdown--btn--register">註冊</a>
+                            </div>
+                        </div>
+                        <a href="#" class="search__item--right--account--a"><i class="fas fa-search"></i>搜尋</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav__inner">
+                <div class="nav__inner__left--logo">
+                    <a href="./index.html" class="nav__inner__left--logo--a">
+                        <img src="./img/tames_watch.svg" alt="">
+                    </a>
+                </div>
+                <div class="nav__inner__center">
+                    <a href="#" id="nav-btn">menu</a>
+                    <ul class="nav__inner__center--menu">
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">產品介紹</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./watches.html">防水系列</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">運動系列</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">定位系列</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">最新消息</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">最新活動</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./news.html">最新消息</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">支援服務</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">常見問題</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">說明書下載</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./support.html">客服諮詢</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__inner__right">
+                    <a href="#" class="nav__inner__right--cart"><img src="./img/icon-shopping-cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row section2">
+                <div class="col-md-8 col-12 left bottom detail-visual">
+                    <div class="detail-visual-inner">
+                        <div class="detail-visual-item">
+                            <div class="imgWrap">
+                                <img src="./img/watches-detail-01.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail-visual-item">
+                            <div class="imgWrap">
+                                <img src="./img/watches-detail-02.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail-visual-item">
+                            <div class="imgWrap">
+                                <img src="./img/watches-detail-03.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specification">
+                        <div class="detail">
+                            <div class="title">
+                                <h2 class="formattitle">規格</h2>
+                            </div>
+                            
+                            <div class="accordion accordion-flush format" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            基本資料
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">錶殼尺寸 (長 x 寬 x 高)</div>
+                                                <div class="value">49.3 x 43.2 x 13mm</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">重量</div>
+                                                <div class="value">167 g</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">錶殼與錶圈材質</div>
+                                                <div class="value">錶殼 / 錶圈材質：不鏽鋼</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">錶帶材質</div>
+                                                <div class="value">實心錶帶 <br>單觸 3 摺疊錶扣 <br>不鏽鋼錶帶</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">構造</div>
+                                                <div class="value">耐衝擊構造</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">防水能力</div>
+                                                <div class="value">防水 200 米</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">時間校正</div>
+                                                <div class="value">電波時計；Multi band 6</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">電池與電池壽命</div>
+                                                <div class="value">Tough Solar（太陽能）</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            外殼
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">材質&背盍</div>
+                                                <div class="value">碘物玻璃</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">表面處理</div>
+                                                <div class="value">紫色離子鍍膜錶殼 <br>紫色離子鍍膜錶帶 <br>藍灰色離子鍍膜錶帶</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            手錶功能
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">世界時間</div>
+                                                <div class="value">5 世界時間 39 個時區（39 個城市 + 國際標準時間）、日光節約時間開/關、居住城市/世界時間城市對調、自動夏令時間（DST）切換</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">碼錶</div>
+                                                <div class="value">1/100 秒秒錶 測量範圍：00'00"00~59'59"99（首個 60 分鐘），1:00'00~23:59'59（60 分鐘後） 測量單位：1/100 秒（首個 60 分鐘） 1 秒（60 分鐘後） 測量模式：經過時間、中途時間、第一名與第二名時間差</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">計時器</div>
+                                                <div class="value">倒數定時器 測量單位：1 秒 倒數範圍：24 小時 倒數開始時間設定範圍：1 分鐘至 24 小時（增加以 1 分鐘和 1 小時為單位）</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">鬧鈴/整點報時</div>
+                                                <div class="value">5 個每日鬧鈴（1 個貪睡鬧鈴） <br>整點報時</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">照明</div>
+                                                <div class="value">LED 燈背光（超亮照明） 全自動 LED 燈、選擇性照明持續時間（2 秒或 4 秒）、殘照機能</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">燈光顏色</div>
+                                                <div class="value">LED：白色</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">行事曆</div>
+                                                <div class="value">全自動日曆（至 2099 年）</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">靜音功能</div>
+                                                <div class="value">按鈕操作音開/關</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">節電功能</div>
+                                                <div class="value">節電功能（當手錶放置在黑暗中，顯示畫面會變為空白，以節省電力）</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">電量顯示/警示</div>
+                                                <div class="value">低電量警示</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">電量維持時間</div>
+                                                <div class="value">電池壽命估計值：可充電電池為 10 個月（以電池充電後沒有暴露在光線下正常使用的操作時間計算） 可充電電池為 22 個月（以電池充滿電之後放置在完全黑暗的環境中並開啟「節電功能」的操作時間計算）</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">精準度</div>
+                                                <div class="value">精準度：每月 ±15 秒（沒有訊號校正和「Mobile Link」功能）</div>
+                                            </div>
+                                        </div>
+                                        <div class="row accordion-body">
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">其他商品特色</div>
+                                                <div class="value">12/24 小時格式 <br>日期 / 月份顯示互換 <br>星期數顯示（可選擇以六種語言顯示星期數） <br>一般計時：時、分、秒、下午、月份、日期、星期</div>
+                                            </div>
+                                            <div class="col-md-6 col-12 featureType">
+                                                <div class="label">時間校正資料</div>
+                                                <div class="value">校時訊號站名：DCF77（德國，曼佛林根） 頻率：77.5 kHz 站名：MSF（英格蘭，安索恩） 頻率：60.0 kHz 站名：WWVB（美國，科林斯堡） 頻率：60.0 kHz 站名：JJY（日本，福島、福岡/佐賀） 頻率：40.0 kHz（福島） / 60.0 kHz（福岡/佐賀） 站名：BPC（中國河南省商丘市） 頻率：68.5 kHz <br>校時訊號接收 一天最多自動接收六* 次（一旦自動接收成功，剩餘自動接收次數隨即取消） *中國校時訊號每天 5 次 手動接收 最新訊號接收結果</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12  right top detail-info">
+                    <div class="detail-name">
+                        <span class="seriestop">指針數位</span>
+                        <span class="series">2100金屬包覆系列</span>
+                        <h1 class="name">TQ-SX3400-3A</h1>
+                        <div class="label-comb">
+                            <div class="label-wrap">
+                                <span class="new">NEW</span>
+                                <span class="month">2021年8月</span>
+                            </div>
+                            <div class="price-wrap">
+                                <div class="price-label">售價</div>
+                                NT$7,500
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-variation">
+                        <div class="detail-variation-inner">
+                            <ul class="listChoose">
+                                <li class="link-item">
+                                    <a href="" class="otherProduct">
+                                        <img src="./img/product-img-01.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="" class="otherProduct">
+                                        <img src="./img/product-img-04.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="" class="otherProduct">
+                                        <img src="./img/product-img-07.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-utility">
+                        <div class="utilitybox">
+                            <a href="" class="utility-a cart-a">加入購物車 <i class="fas fa-cart-plus"></i></a>
+                        </div>
+                        <div class="utilitybox">
+                            <a href="" class="utility-a fav-a">我的最愛 <i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="detail-txt">
+                        <p><b>商品編號：T34556789</b><br>絕版品腕錶無保固 ; 商品或略有瑕疵，恕不退換貨，請斟酌選購。錶盒備品隨機搭贈，恕不指定。絕版品限量出清，如遇斷貨系統將自動取消訂單，再請重新選購。TQ系列錶款以下方的字樣為印刻處理，呈現簡單的一體成型設計，融入獨特創新的設計概念，搭配作工細緻的特殊漸層色錶盤及混合軟木與皮革的質感錶帶，巧妙捕捉海洋深邃迷人的美麗，彷彿戴上它就能投入地中海的浪漫懷抱中，在陽光親吻的海灘上盡享夏日的熱情與溫暖。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <div class="footer__main">
+                <div class="main-newsletter">
+                    <h2 class="newsletter-title">訂閱電子報得到最新消息</h2>
+                    <form action="" novalidate="novalidate" class="form subscribe" mothod="post" >
+                        <fieldset class="field newsletter">
+                            <legend class="hidden">Newsletter</legend>
+                            <div class="control">
+                                <input name="email" type="email" id="newsletter" aria-labelledby="newsletter-label" class="input-placeholder empty inputBox" data-validate="{required:true, 'validate-email':true}">
+                                <label class="placeholder" for="newsletter" id="newsletter-label">
+                                    <span>輸入你的電子信箱</span>
+                                </label>
+                            </div>
+                            <input type="hidden" name="is_before" value="1">
+                            <button class="action subscribe" title="提交" type="submit">
+                                <span>提交</span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="row main-menu">
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="subtitle">
+                            <h4 class="title">系列</h4>
+                        </div>
+                        <ul class="menu-items">
+                            <li class="item"><a href="" class="link">系列1</a></li>
+                            <li class="item"><a href="" class="link">系列2</a></li>
+                            <li class="item"><a href="" class="link">系列3</a></li>
+                            <li class="item"><a href="" class="link">系列4</a></li>
+                            <li class="item"><a href="" class="link">系列5</a></li>
+                            <li class="item"><a href="" class="link">系列6</a></li>
+                            <li class="item"><a href="" class="link">系列7</a></li>
+                            <li class="item"><a href="" class="link">系列8</a></li>
+                            <li class="item"><a href="" class="link">系列9</a></li>
+                            <li class="item"><a href="" class="link">系列10</a></li>
+                            <li class="item"><a href="" class="link">系列11</a></li>
+                            <li class="item"><a href="" class="link">系列12</a></li>
+                            <li class="item"><a href="" class="link">系列13</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">尋找你的腕錶</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">女用錶</a></li>
+                                <li class="item"><a href="" class="link">男用錶</a></li>
+                                <li class="item"><a href="" class="link">計時</a></li>
+                                <li class="item"><a href="" class="link">防水潛水</a></li>
+                                <li class="item"><a href="" class="link">錶帶</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">TAMES世界</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">製錶</a></li>
+                                <li class="item"><a href="" class="link">太空</a></li>
+                                <li class="item"><a href="" class="link">運動</a></li>
+                                <li class="item"><a href="" class="link">博物館</a></li>
+                                <li class="item"><a href="" class="link">年鑑</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">計時腕錶</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">認證</a></li>
+                                <li class="item"><a href="" class="link">查看測試結果</a></li>
+                                <li class="item"><a href="" class="link">掃描應用程式</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">尋找銷售點</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">尋找銷售點</a></li>
+                                <li class="item"><a href="" class="link">我的位置</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">顧客服務</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">服務與價格</a></li>
+                                <li class="item"><a href="" class="link">保護您的TAMES作品</a></li>
+                                <li class="item"><a href="" class="link">尋找送修服務點</a></li>
+                                <li class="item"><a href="" class="link">證書與檔案摘錄</a></li>
+                                <li class="item"><a href="" class="link">訂閱產品目錄</a></li>
+                                <li class="item"><a href="" class="link">常見問題</a></li>
+                                <li class="item"><a href="" class="link">技術詞彙</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">更多</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">媒體室</a></li>
+                                <li class="item"><a href="" class="link">快速連結</a></li>
+                            </ul>
+                        </div>
+                        <div class="contactbox"><a href="./contact.html" class="contact"><span class="contactTitle">聯絡我們</span></a></div>
+                    </div>
+                </div>
+                <div class="main-copyright">
+                    <div class="copyright">Copyright 2021 TAMES WATCHES. All right reserved.</div>
+                    <div class="media">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+
+
+
+
+    <!-- slick -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <!-- index.JS -->
+    <script src="./js/index.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

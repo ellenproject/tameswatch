@@ -1,0 +1,93 @@
+*
+    margin: 0
+    padding: 0
+
+main
+    width: 100%
+    max-width: 1920px
+    margin: 0 auto
+    overflow: hidden
+body
+    position: relative
+    line-height: 1.7
+    font-family: Exo, "Microsoft JhengHei", 微軟正黑體, sans-serif, serif
+    font-size: 16px
+    @media screen and ( max-width: 768px )
+        padding-bottom: 0
+        padding-top: 140px
+    .popular
+        &__item
+            margin-top: 100px
+            &--left
+                background-color: #f2f2f2
+                position: relative
+                &--inner
+                    &--text
+                        background-color: #f2f2f2
+                        z-index: 99
+                    &--img
+                        &--carousel
+                            width: 100%
+                            overflow: hidden
+                            img
+                                width: 100%
+                &--button
+                    display: flex
+                    position: absolute
+                    right: 0
+                    .carousel-control-prev
+                        position: relative
+                        z-index: 1
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 30%
+                        padding: 0
+                        color: #212529
+                        text-align: center
+                        background: 0 0
+                        border: 0
+                        opacity: .5
+                        transition: opacity .15s ease
+                        align-items: flex-end
+                        background-color: #494949
+                        margin-right: 10px
+                    .carousel-control-next
+                        position: relative
+                        z-index: 1
+                        align-items: center
+                        justify-content: center
+                        width: 30%
+                        padding: 0
+                        color: #212529
+                        text-align: center
+                        background: 0 0
+                        border: 0
+                        opacity: .5
+                        transition: opacity .15s ease
+                        background-color: #494949
+            &--right
+                background-color: #f2f2f2
+                &--inner
+                    &--subtitle
+                        word-wrap: break-word
+                        line-height: 1.8em
+                        h3
+                            font-size: 40px
+                            font-weight: lighter
+                            color: #333
+                            line-height: 1.25em
+                            letter-spacing: 0.05em
+                        h4
+                            font-size: 20px
+                            font-weight: 300
+                            color: #666
+                    &--img
+                        &--carousel
+                            width: 100%
+                            overflow: hidden
+                            img
+                                width: 100%
+                    &--text
+                        background-color: #f2f2f2
+                        z-index: 99

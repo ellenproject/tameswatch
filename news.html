@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tames Watch Taiwan 智能手錶品牌，探索TAMES的所有產品。 包括smartwatch，健身腕帶，耳機，睡眠芽，以及更專業的可穿戴設備。">
+    <meta name="keywords" content="智能手錶, 藍芽裝置">
+    <title>TAMES WATCH</title>
+    <link rel="stylesheet" href="./sass/news.css">
+    <link rel="stylesheet" href="./sass/slick.css">
+    <link rel="stylesheet" href="./sass/slick-theme.css">
+    <script src="./js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/66ca577ef5.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="search">
+            <div class="search__item">
+                <div class="search__item--left">
+                    <i class="fas fa-headphones-alt"></i>客服專線 0800-774-488
+                </div>
+                <div class="search__item--right">
+                    <div class="search__item--right--account">
+                        <a href="#" class="search__item--right--account--a search__item--right--account--button">
+                            <i class="fas fa-user"></i>會員專區<i class="fas fa-caret-down"></i>
+                        </a>
+                        <div class="search__item--right--account--dropdown">
+                            <ul class="search__item--right--account--dropdown--order">
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">訂單</a></li>
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">退貨申請</a></li>
+                                <li class="search__item--right--account--dropdown--order--item"><a href="#">查看我的最愛</a></li>
+                            </ul>
+                            <div class="search__item--right--account--dropdown--track">
+                                <form action="#">
+                                    <div class="search__item--right--account--dropdown--track--text">追蹤我的訂單</div>
+                                    <div class="search__item--right--account--dropdown--track--input">
+                                        <input type="text" size="20" class="search__item--right--account--dropdown--track--input--email" placeholder="訂單編號/電子郵件">
+                                        <button title="繼續" class="search__item--right--account--dropdown--track--input--btn" type="submit"><i class="fas fa-caret-right"></i></button>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search__item--right--account--dropdown--btn">
+                                <a href="#" class="search__item--right--account--dropdown--btn--go search__item--right--account--dropdown--btn--login">登入</a>
+                                <a href="#" class="search__item--right--account--dropdown--btn--go search__item--right--account--dropdown--btn--register">註冊</a>
+                            </div>
+                        </div>
+                        <a href="#" class="search__item--right--account--a"><i class="fas fa-search"></i>搜尋</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav__inner">
+                <div class="nav__inner__left--logo">
+                    <a href="./index.html" class="nav__inner__left--logo--a">
+                        <img src="./img/tames_watch.svg" alt="">
+                    </a>
+                </div>
+                <div class="nav__inner__center">
+                    <a href="#" id="nav-btn">menu</a>
+                    <ul class="nav__inner__center--menu">
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">產品介紹</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./watches.html">防水系列</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">運動系列</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">定位系列</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">最新消息</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">最新活動</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./news.html">最新消息</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__inner__center--menu--item">
+                            <a href="" class="disabled">支援服務</a>
+                            <ul class="nav__inner__center--menu--item--second">
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">常見問題</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="" class="disabled">說明書下載</a></li>
+                                <li class="nav__inner__center--menu--item--second--list"><a  href="./support.html">客服諮詢</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__inner__right">
+                    <a href="#" class="nav__inner__right--cart"><img src="./img/icon-shopping-cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row titleWrapper">
+                <div class="subtitle">
+                    <h1>最新消息</h1>
+                </div>
+            </div>
+            <div class="row news">
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-01.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">Aug</span>
+                            <span class="date">8</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">Jul</span>
+                            <span class="date">7</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-03.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">Jun</span>
+                            <span class="date">6</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-04.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">May</span>
+                            <span class="date">5</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-05.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">Apr</span>
+                            <span class="date">4</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 newsbox">
+                    <div class="imgWrapper">
+                        <a href="./newspage.html" class="imgLink">
+                            <img src="./img/news-event-06.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="infoWrapper">
+                        <div class="linksDate">
+                            <span class="month">Mar</span>
+                            <span class="date">3</span>
+                        </div>
+                        <h2 class="LinksTitle">
+                            <a href="./newspage.html">【公告】台灣TAMES高雄展示中心，8月9日暫停營業公告</a>
+                        </h2>
+                        <div class="description">
+                            <div class="description-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis enim nemo odit molestiae, laboriosam neque quasi aliquam saepe tempore possimus! Non voluptatum reprehenderit optio fugiat harum deserunt similique iste facilis nam repellendus. Fugiat neque ratione expedita, sint tempore debitis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="" class="paginationSection">
+                <ul class="pagination pagination-sm justify-content-center">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <div class="footer__main">
+                <div class="main-newsletter">
+                    <h2 class="newsletter-title">訂閱電子報得到最新消息</h2>
+                    <form action="" novalidate="novalidate" class="form subscribe" mothod="post" >
+                        <fieldset class="field newsletter">
+                            <legend class="hidden">Newsletter</legend>
+                            <div class="control">
+                                <input name="email" type="email" id="newsletter" aria-labelledby="newsletter-label" class="input-placeholder empty inputBox" data-validate="{required:true, 'validate-email':true}">
+                                <label class="placeholder" for="newsletter" id="newsletter-label">
+                                    <span>輸入你的電子信箱</span>
+                                </label>
+                            </div>
+                            <input type="hidden" name="is_before" value="1">
+                            <button class="action subscribe" title="提交" type="submit">
+                                <span>提交</span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="row main-menu">
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="subtitle">
+                            <h4 class="title">系列</h4>
+                        </div>
+                        <ul class="menu-items">
+                            <li class="item"><a href="" class="link">系列1</a></li>
+                            <li class="item"><a href="" class="link">系列2</a></li>
+                            <li class="item"><a href="" class="link">系列3</a></li>
+                            <li class="item"><a href="" class="link">系列4</a></li>
+                            <li class="item"><a href="" class="link">系列5</a></li>
+                            <li class="item"><a href="" class="link">系列6</a></li>
+                            <li class="item"><a href="" class="link">系列7</a></li>
+                            <li class="item"><a href="" class="link">系列8</a></li>
+                            <li class="item"><a href="" class="link">系列9</a></li>
+                            <li class="item"><a href="" class="link">系列10</a></li>
+                            <li class="item"><a href="" class="link">系列11</a></li>
+                            <li class="item"><a href="" class="link">系列12</a></li>
+                            <li class="item"><a href="" class="link">系列13</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">尋找你的腕錶</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">女用錶</a></li>
+                                <li class="item"><a href="" class="link">男用錶</a></li>
+                                <li class="item"><a href="" class="link">計時</a></li>
+                                <li class="item"><a href="" class="link">防水潛水</a></li>
+                                <li class="item"><a href="" class="link">錶帶</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">TAMES世界</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">製錶</a></li>
+                                <li class="item"><a href="" class="link">太空</a></li>
+                                <li class="item"><a href="" class="link">運動</a></li>
+                                <li class="item"><a href="" class="link">博物館</a></li>
+                                <li class="item"><a href="" class="link">年鑑</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">計時腕錶</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">認證</a></li>
+                                <li class="item"><a href="" class="link">查看測試結果</a></li>
+                                <li class="item"><a href="" class="link">掃描應用程式</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">尋找銷售點</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">尋找銷售點</a></li>
+                                <li class="item"><a href="" class="link">我的位置</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 menu-content">
+                        <div class="boxTop">
+                            <div class="subtitle">
+                                <div class="title">顧客服務</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">服務與價格</a></li>
+                                <li class="item"><a href="" class="link">保護您的TAMES作品</a></li>
+                                <li class="item"><a href="" class="link">尋找送修服務點</a></li>
+                                <li class="item"><a href="" class="link">證書與檔案摘錄</a></li>
+                                <li class="item"><a href="" class="link">訂閱產品目錄</a></li>
+                                <li class="item"><a href="" class="link">常見問題</a></li>
+                                <li class="item"><a href="" class="link">技術詞彙</a></li>
+                            </ul>
+                        </div>
+                        <div class="boxBottom">
+                            <div class="subtitle">
+                                <div class="title">更多</div>
+                            </div>
+                            <ul class="menu-items">
+                                <li class="item"><a href="" class="link">媒體室</a></li>
+                                <li class="item"><a href="" class="link">快速連結</a></li>
+                            </ul>
+                        </div>
+                        <div class="contactbox"><a href="./contact.html" class="contact"><span class="contactTitle">聯絡我們</span></a></div>
+                    </div>
+                </div>
+                <div class="main-copyright">
+                    <div class="copyright">Copyright 2021 TAMES WATCHES. All right reserved.</div>
+                    <div class="media">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+
+
+
+
+    <!-- slick -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <!-- index.JS -->
+    <script src="./js/index.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

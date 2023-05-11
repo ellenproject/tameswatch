@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/66ca577ef5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/test.js"></script>
+  </head>
+  <body>
+    <style>
+      ul,
+      ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        line-height: 2em;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .nav {
+        overflow: auto;
+      }
+      /*第一層選單*/
+      .nav > ul > li {
+        padding-left: 15px;
+        line-height: 3.3em;
+        border-bottom: solid 1px #333;
+      }
+
+      /*第二層選單*/
+      .nav > ul > li > ul > li {
+        padding-left: 15px;
+        border-bottom: solid 1px #333;
+      }
+      .nav > ul > li > ul > li:first-child {
+        border-top: solid 1px #333;
+      }
+      .nav > ul > li > ul > li:last-child {
+        border: 0;
+      }
+
+      /*第三層選單*/
+      .nav > ul > li > ul > li > ul > li {
+        padding-left: 15px;
+        border-bottom: solid 1px #333;
+      }
+      .nav > ul > li > ul > li > ul > li:first-child {
+        border-top: solid 1px #333;
+      }
+      .nav > ul > li > ul > li > ul > li:last-child {
+        border: 0;
+      }
+
+      .menu-plus {
+        display: block;
+        background: #333;
+        color: #fff !important;
+        padding: 2px 15px;
+        margin-top: 5px;
+        border-radius: 30px;
+        float: right;
+      }
+
+      @media (min-width: 768px) {
+        #nav-btn,
+        .sub-menu {
+          display: none;
+        }
+        .nav > .menu {
+          display: block !important;
+        }
+        /*第一層選單*/
+        .nav > ul > li {
+          float: left;
+          margin-left: 15px;
+          padding-left: 15px;
+          line-height: 3.3em;
+          border-bottom: solid 1px #333;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav > ul,
+        .sub-menu {
+          display: none;
+        }
+      }
+
+      /* tames watch */
+      .header__nav{
+        display: flex;
+        
+      }
+      .header__nav__left--logo{
+        width: 216px;
+      }
+      .header__nav__center--menu{
+        display: flex;
+        background: lavender;
+        color: #fff;
+      }
+      .header__nav__right{
+        width: 50px;
+        overflow: hidden;
+      }
+      .header__nav__right--cart img{
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        #left-btn,
+        .header__nav__center--menu--item--select {
+          display: none;
+        }
+        .header__nav > .header__nav__center--menu {
+          display: block !important;
+        }
+        /*第一層選單*/
+        .header__nav__center > .header__nav__center--menu > .header__nav__center--menu--item {
+          float: left;
+          margin-left: 15px;
+          padding-left: 15px;
+          line-height: 3.3em;
+          border-bottom: solid 1px #333;
+        }
+      }
+      @media (max-width: 768px) {
+        .header__nav__center > .header__nav__center--menu,
+        .header__nav__center--menu--item--select {
+          display: none;
+        }
+      }
+      
+    </style>
+
+    <div class="nav">
+      <a href="#" id="nav-btn">menu</a>
+      <ul class="menu">
+        <li>
+          <a href="http://www.minwt.com/category/dc"
+            ><i class="icon-camera"></i> 相機攝影</a
+          >
+          <ul class="sub-menu">
+            <li>
+              <a href="http://www.minwt.com/category/dc/基本概念">基本概念</a>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/dc/productphoto"
+                >商品攝影</a
+              >
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/dc/equipment">攝影器材</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="http://www.minwt.com/category/dc/器材操控"
+                    >器材操控</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.minwt.com/category/dc/diy-dc">器材DIY</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/dc/影像軟體">影像軟體</a>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/dc/書籍課程活動"
+                >資源活動</a
+              >
+            </li>
+            <li class="end">
+              <a href="http://www.minwt.com/category/dc/basicconcept"
+                >其它綜合</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://www.minwt.com/category/ps"
+            ><i class="icon-photoshop"></i> Photoshop</a
+          >
+          <ul class="sub-menu">
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-photo-fix"
+                >攝影後製</a
+              >
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-plugin-tools"
+                >外掛工具</a
+              >
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-effect">特效合成</a>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-clearbg">去背技法</a>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-web">網頁動畫</a>
+            </li>
+            <li>
+              <a href="http://www.minwt.com/category/ps/ps-trouble">相關問題</a>
+            </li>
+            <li class="end">
+              <a href="http://www.minwt.com/category/ps/ps-other">其它綜合</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://www.minwt.com/category/mobile"
+            ><i class="icon-mobile"></i> 智慧型裝置</a
+          >
+          <ul class="sub-menu">
+            <li><a href="http://www.minwt.com/category/android">Android</a></li>
+            <li>
+              <a href="http://www.minwt.com/category/ios">iPhone</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="http://www.minwt.com/category/ios/ios-iphone-using"
+                    >火速上手</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.minwt.com/category/ios/ios-iphone-app"
+                    >應用程式</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.minwt.com/category/ios/ios-product"
+                    >週邊配件</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.minwt.com/category/ios/ios-iphone-jb-iphone"
+                    >JB教學應用</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.minwt.com/category/ios/ios-iphone-developer"
+                    >應用程式開發</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.minwt.com/category/ios/ios-iphone-other"
+                    >其它綜合</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://www.minwt.com/category/ipad">iPad</a></li>
+            <li class="end">
+              <a href="http://www.minwt.com/category/blackberry">BlackBerry</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="header">
+      <div class="header__nav">
+          <div class="header__nav__left--logo">
+              <a href="./index.html" class="header__nav__left--logo--a">
+                  <img src="./img/tames_watch.svg" alt="">
+              </a>
+              <a href="#" id="nav-btn">menu</a>
+          </div>
+          <div class="header__nav__center">
+            <a href="#" id="nav-btn">menu</a>
+              <ul class="header__nav__center--menu">
+                  <li class="header__nav__center--menu--item">
+                      <a href="./watches.html">產品介紹</a>
+                      <ul class="header__nav__center--menu--item--select">
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">防水系列</a></li>
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">運動系列</a></li>
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">定位系列</a></li>
+                      </ul>
+                  </li>
+                  <li class="header__nav__center--menu--item">
+                      <a href="./news.html">最新消息</a>
+                      <ul class="header__nav__center--menu--item--select">
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">最新活動</a></li>
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">最新消息</a></li>
+                      </ul>
+                  </li>
+                  <li class="header__nav__center--menu--item">
+                      <a href="./support.html">支援服務</a>
+                      <ul class="header__nav__center--menu--item--select">
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">常見問題</a></li>
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">說明書下載</a></li>
+                          <li class="header__nav__center--menu--item--select--list"><a  href="">客服諮詢</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="header__nav__right">
+              <a href="#" class="header__nav__right--cart"><img src="./img/icon-shopping-cart.png" alt=""></a>
+          </div>
+      </div>
+  </div>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/test.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
